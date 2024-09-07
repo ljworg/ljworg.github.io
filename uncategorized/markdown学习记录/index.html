@@ -15,13 +15,13 @@
   <meta name="subtitle" content="ljw的个人博客∠( ᐛ 」∠)＿">
 
 
-  <meta name="description" content="yiwanfan.com  ljwblog">
+  <meta name="description" content="yiwan.fan  ljwblog的备份站">
 
 
   <meta name="keywords" content="博客,个人博客,技术博客">
 
 
-<title>树莓派搭建wordpress博客wordpress博客搭建树莓派搭建网站树莓派搭建博客树莓派wordpress自制博客网站 | ljwblog</title>
+<title>markdown学习记录 | ljwblog</title>
 
 
 
@@ -160,7 +160,7 @@
         </h2>
       </a>
       <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
-        树莓派搭建wordpress博客wordpress博客搭建树莓派搭建网站树莓派搭建博客树莓派wordpress自制博客网站
+        markdown学习记录
       </div>
       <div class="flex-1"></div>
       <div class="flex items-center gap-3">
@@ -224,23 +224,23 @@
   <header class="overflow-hidden pt-6 pb-6 md:pt-12">
     <div class="pt-4 md:pt-6">
       <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
-        树莓派搭建wordpress博客wordpress博客搭建树莓派搭建网站树莓派搭建博客树莓派wordpress自制博客网站
+        markdown学习记录
       </h1>
       <div>
         <section class="flex items-center gap-3 text-sm">
           <span class="flex items-center gap-1">
             <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
-            <time>2024-09-01</time>
+            <time>2024-09-07</time>
           </span>
           <span class="text-gray-400">·</span>
           <span class="flex items-center gap-1">
             <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
-            <span>3 min</span>
+            <span>2 min</span>
           </span>
           <span class="text-gray-400">·</span>
           <span class="flex items-center gap-1">
             <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
-            <span>774 words</span>
+            <span>544 words</span>
           </span>
           
         </section>
@@ -249,84 +249,70 @@
   </header>
   <!-- content -->
   <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
-    <h1 id="前言（几句废话）"><a href="#前言（几句废话）" class="headerlink" title="前言（几句废话）"></a>前言（几句废话）</h1><p>我之前买了一个树莓派，一直没啥用处，想到可以整个博客，网上搜的许多资料都比较老，就打算自己写一篇，这个教程是给已经安装好系统并开启ssh的树莓派安装，烧录系统网上有许多教程，就不赘述了
-！下面的所有操作均在root账户下操作</p>
+    <h1 id="速查手册"><a href="#速查手册" class="headerlink" title="速查手册"></a>速查手册</h1><table class="table table-bordered"><thead class="thead-light"><tr><th>元素</th> <th>Markdown 语法</th></tr></thead> <tbody><tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/headings.html">标题（Heading）</a></td> <td><code># H1<br>
+        ## H2<br>
+        ### H3</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/bold.html">粗体（Bold）</a></td> <td><code>**bold text**</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/italic.html">斜体（Italic）</a></td> <td><code>*italicized text*</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/blockquotes.html">引用块（Blockquote）</a></td> <td><code>> blockquote</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/ordered-lists.html">有序列表（Ordered List）</a></td> <td><code>1. First item</code><br> <code>2. Second item</code><br> <code>3. Third item</code><br></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/unordered-lists.html">无序列表（Unordered List）</a></td> <td><code>
+          - First item<br>
+          - Second item<br>
+          - Third item<br></code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/code.html">代码（Code）</a></td> <td><code>`code`</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/horizontal-rules.html">分隔线（Horizontal Rule）</a></td> <td><code>---</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/links.html">链接（Link）</a></td> <td><code>[title](https://www.example.com)</code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//basic-syntax/images.html">图片（Image）</a></td> <td><code>![alt text](image.jpg)</code></td></tr></tbody></table>
+
+
+
+<table class="table table-bordered"><thead class="thead-light"><tr><th>元素</th> <th>Markdown 语法</th></tr></thead> <tbody><tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//extended-syntax/tables.html">表格（Table）</a></td> <td><code>
+          | Syntax      | Description |<br>
+          | ----------- | ----------- |<br>
+          | Header      | Title       |<br>
+          | Paragraph   | Text        |
+      </code></td></tr> <tr><td><a target="_blank" rel="noopener" href="https://markdown.com.cn//extended-syntax/fenced-code-blocks.html">代码块（Fenced Code Block）</a></td> <td><code>```<br>
+      {<br>
+        "firstName": "John",<br>
+        "lastName": "Smith",<br>
+        "age": 25<br>
+      }<br>
+      <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line">      &lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://markdown.com.cn//extended-syntax/definition-lists.html&quot;&gt;定义列表（Definition List）&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;code&gt;</span><br><span class="line">        term&lt;br&gt;</span><br><span class="line">        : definition</span><br><span class="line">      &lt;/code&gt;&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://markdown.com.cn//extended-syntax/strikethrough.html&quot;&gt;删除线（Strikethrough）&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;code&gt;~~The world is flat.~~&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://markdown.com.cn//extended-syntax/task-lists.html&quot;&gt;任务列表（Task List）&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;code&gt;</span><br><span class="line">        - [x] Write the press release&lt;br&gt;</span><br><span class="line">        - [ ] Update the website&lt;br&gt;</span><br><span class="line">        - [ ] Contact the media</span><br><span class="line">      &lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</span><br><span class="line"></span><br><span class="line"># 一、标题语法</span><br><span class="line"></span><br><span class="line"># 一级标题</span><br><span class="line"></span><br><span class="line">## 二级标题</span><br><span class="line"></span><br><span class="line">### 三级标题</span><br><span class="line"></span><br><span class="line">#### 四级标题</span><br><span class="line"></span><br><span class="line">##### 五级标题</span><br><span class="line"></span><br><span class="line">###### 六级标题</span><br><span class="line"></span><br><span class="line">#与字要有空格</span><br><span class="line"></span><br><span class="line">正常</span><br><span class="line"></span><br><span class="line"># 二、粗体斜体</span><br><span class="line"></span><br><span class="line">**粗体**</span><br><span class="line"></span><br><span class="line">***斜体***</span><br><span class="line"></span><br><span class="line">&gt;引用信息</span><br><span class="line">&gt;</span><br><span class="line">&gt;啦啦啦</span><br><span class="line">&gt;</span><br><span class="line">&gt;&gt;引用引用</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 三、项</span><br><span class="line"></span><br><span class="line">- 123456</span><br><span class="line">- 234567</span><br><span class="line">- 345678</span><br><span class="line"></span><br><span class="line"># 四、代码</span><br><span class="line"></span><br><span class="line">代码</span><br><span class="line"></span><br><span class="line">`print(&#x27;hello world,this is code&#x27;)`</span><br><span class="line"></span><br><span class="line"># 五、分割线</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">test</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 六、删除线</span><br><span class="line"></span><br><span class="line">~~heihei~~</span><br><span class="line"></span><br><span class="line"># 七、链接：</span><br><span class="line"></span><br><span class="line">`[显示](指向链接)`</span><br><span class="line"></span><br><span class="line">这是一个链接 [百度](https://www.baidu.com)。</span><br><span class="line"></span><br><span class="line">&lt;https://www.baidu.com&gt;</span><br><span class="line"></span><br><span class="line">email:</span><br><span class="line">&lt;ljworg@163.com&gt;</span><br><span class="line"></span><br><span class="line">[引用][1]</span><br><span class="line"></span><br><span class="line">[1]: https:///www.baidu.com</span><br><span class="line"></span><br><span class="line">连接中含有空格时，请用%20代替</span><br><span class="line"></span><br><span class="line"># 八、图片：</span><br><span class="line"></span><br><span class="line">`![图片alt](连接 &quot;图片title&quot;)`</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 九、表格：</span><br><span class="line"></span><br><span class="line">&gt;要添加表，请使用三个或多个连字符（---）创建每列的标题，并使用管道（|）分隔每列。</span><br><span class="line"></span><br><span class="line">| hello | world |</span><br><span class="line">| ----- | ----- |</span><br><span class="line">| test  | test2 |</span><br><span class="line"></span><br><span class="line">| Syntax    | Description |</span><br><span class="line">| --------- | ----------- |</span><br><span class="line">| Header    | Title       |</span><br><span class="line">| Paragraph | Text        |</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 十、代码块:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+<h1 id="十一、任务列表"><a href="#十一、任务列表" class="headerlink" title="十一、任务列表"></a>十一、任务列表</h1><ul>
+<li>[x] Write the press release</li>
+<li>[ ] Update the website</li>
+<li>[ ] Contact the media</li>
+</ul>
 <blockquote>
-<p>本文发布在<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_48174666/article/details/124729494">csdn-ljworg</a>与[www.heis.fun</p>
-<p>](https:&#x2F;&#x2F;www.heis.fun)</p>
+<p>本文参考<a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a>的内容，仅为个人学习记录，侵权请联系</p>
 </blockquote>
-<h1 id="一、搭建过程"><a href="#一、搭建过程" class="headerlink" title="一、搭建过程"></a>一、搭建过程</h1><h2 id="1-更新树莓派"><a href="#1-更新树莓派" class="headerlink" title="1.更新树莓派"></a>1.更新树莓派</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update -y</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-安装一些包"><a href="#2-安装一些包" class="headerlink" title="2.安装一些包"></a>2.安装一些包</h2><h3 id="1-apache2-php"><a href="#1-apache2-php" class="headerlink" title="(1)apache2 php"></a>(1)apache2 php</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install apache2 php -y</span><br><span class="line">service apache2 restart</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-MariaDB"><a href="#2-MariaDB" class="headerlink" title="(2)MariaDB"></a>(2)MariaDB</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install mariadb-server php-mysql -y</span><br><span class="line">service apache2 restart</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-安装wordpress"><a href="#3-安装wordpress" class="headerlink" title="3.安装wordpress"></a>3.安装wordpress</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /var/www/html/</span><br><span class="line"><span class="built_in">rm</span> -rf *</span><br><span class="line">wget https://cn.wordpress.org/latest-zh_CN.tar.gz</span><br><span class="line">tar xzf latest-zh_CN.tar.gz</span><br><span class="line"><span class="built_in">mv</span> wordpress/* .</span><br><span class="line"><span class="built_in">rm</span> -rf wordpress latest.tar.gz</span><br></pre></td></tr></table></figure>
-
-<p>除此之外还得调整一下权限 不然到时候wordpress写入配置文件写不进去</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chown</span> -R www-data: .</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-配置MariaDB"><a href="#4-配置MariaDB" class="headerlink" title="4.配置MariaDB"></a>4.配置MariaDB</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
-<p>当出现Enter current password for root (enter for none)回车即可</p>
-<p>当出现Switch to unix_socket authentication [Y&#x2F;n]输入Y回车即可</p>
-<p>当出现Change the root password? [Y&#x2F;n] 输入Y回车即可 然后输入一个密码（输入时不会显示）</p>
-<p>后面四个询问都Y回车后即可</p>
-<h3 id="5-创建wordpress数据库"><a href="#5-创建wordpress数据库" class="headerlink" title="5.创建wordpress数据库"></a>5.创建wordpress数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
-
-<p>运行这行代码会让你输入一次刚刚设置的密码，填写回车即可
-出现  MariaDB [(none)]&gt;  代表OK了</p>
-<p>输入以下代码创建数据库：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database wordpress;</span><br></pre></td></tr></table></figure>
-
-<p>这里得新建一个账号，因为root账号没有密码</p>
-<p>授予你账号所有权限：(ljw为你的用户名)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE USER <span class="string">&#x27;ljw&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED BY <span class="string">&#x27;1119&#x27;</span>;</span><br><span class="line">GRANT ALL ON *.* TO <span class="string">&#x27;ljw&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> WITH GRANT OPTION;</span><br><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
-
-<p>运行后输入<code>exit</code>即可退出</p>
-<h3 id="6-配置wordpress"><a href="#6-配置wordpress" class="headerlink" title="6.配置wordpress"></a>6.配置wordpress</h3><p>如果你前面没出现问题的话<strong>恭喜你</strong>，安装部分已经完成了
-打开http:&#x2F;&#x2F;（树莓派ip）
-<img src="https://s2.loli.net/2024/08/29/cUkBN95uKRm7DlX.png" alt="在这里插入图片描述">
-点击现在就开始
-<img src="https://s2.loli.net/2024/08/29/OjugxbS8aZiq1VM.png" alt="在这里插入图片描述">
-数据库名就是wordpress,用户名为root（你的帐号），后面两个不变
-写好之后提交即可
-<img src="https://s2.loli.net/2024/08/29/cUkBN95uKRm7DlX.png" alt="在这里插入图片描述">
-这里按项填好即可用户名和密码建议和树莓派或者数据库账号密码一样，好记
-填完之后就可以了，<em><strong>开始自由发挥吧</strong></em>
-<img src="https://s2.loli.net/2024/08/29/5mi3ycoHa9s1vru.png" alt="在这里插入图片描述"></p>
-<h2 id="四、安装phpmyadmin"><a href="#四、安装phpmyadmin" class="headerlink" title="四、安装phpmyadmin"></a>四、安装phpmyadmin</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install phpmyadmin</span><br></pre></td></tr></table></figure>
-
-<p>在此过程中，系统将会询问你已经运行的Web服务器类型。这里按空格键，然后按Enter键，选择“ apache2*”选项。
-接下来，我们将需要配置PHPMyAdmin以连接到我们的MYSQL服务器。我们还需要设置一些详细信息，以便我们可以登录到PHPMyAdmin软件。
-然后设置PHPMyAdmin的密码，此密码是PHPMyAdmin用于连接到MySQL服务器的密码。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">ln</span> -s /usr/share/phpmyadmin/var/www/html</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure>
-
-<p>在底部添加：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Include /etc/phpmyadmin/apache.conf</span><br></pre></td></tr></table></figure>
-
-<p>重启：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service apache2 restart</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="二、后言"><a href="#二、后言" class="headerlink" title="二、后言"></a>二、后言</h1><p>如果遇到任何问题可以直接加我微信ljwuini（~~虽然我也不一定会~~ ），csdn不常看
-这篇博客会同时发布在csdn和我刚刚用树莓派搭建的博客上，转载需经同意</p>
 
   </article>
   <!-- tag -->
   <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/markdown/">markdown</a>
+        </span>
+      
     
   </div>
   <!-- prev and next -->
   <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
     <div>
       
+        <a href="/uncategorized/%E6%9F%A5%E7%9C%8B%E6%99%BA%E5%AD%A6%E7%BD%91%E8%A2%AB%E9%9A%90%E8%97%8F%E7%9A%84%E6%88%90%E7%BB%A9/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          查看智学网被隐藏的成绩
+        </a>
+      
     </div>
     <div>
+      
+        <a href="/uncategorized/%E8%8C%B6%E5%8F%B6%E6%8F%90%E5%8F%96%E5%92%96%E5%95%A1%E5%9B%A0%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          茶叶提取咖啡因实验记录
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
       
     </div>
   </div>

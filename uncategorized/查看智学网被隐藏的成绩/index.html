@@ -21,7 +21,7 @@
   <meta name="keywords" content="博客,个人博客,技术博客">
 
 
-<title>Archiv: 2024 | ljwblog</title>
+<title>查看智学网被隐藏的成绩 | ljwblog</title>
 
 
 
@@ -160,7 +160,7 @@
         </h2>
       </a>
       <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
-        
+        查看智学网被隐藏的成绩
       </div>
       <div class="flex-1"></div>
       <div class="flex items-center gap-3">
@@ -206,102 +206,199 @@
 </div>
 
   <main class="pt-14">
-    <section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
-  <div class="flex flex-col h-48 items-center justify-center">
-    <h1 class="site-title text-4xl leading-relaxed">
-      ljwblog
-    </h1>
-    <p class="text-gray-500 mt-2">
-      ljw的个人博客∠( ᐛ 」∠)＿
-    </p>
-  </div>
-  
-  
-    
-    
-      <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold">2024</span>
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+<!-- toc -->
+
+  <!-- tocbot -->
+<nav class="post-toc toc text-sm w-48 relative top-32 right-0 opacity-70 hidden lg:block" style="position: fixed !important;"></nav>
+
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        查看智学网被隐藏的成绩
+      </h1>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="carbon-calendar" ></iconify-icon>
+            <time>2024-09-07</time>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="ic:round-access-alarm" ></iconify-icon>
+            <span>1 min</span>
+          </span>
+          <span class="text-gray-400">·</span>
+          <span class="flex items-center gap-1">
+            <iconify-icon width="18" icon="icon-park-outline:font-search" ></iconify-icon>
+            <span>292 words</span>
+          </span>
+          
+        </section>
       </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto slide-enter-content dark:prose-invert">
+    <h1 id="杂谈"><a href="#杂谈" class="headerlink" title="杂谈"></a>杂谈</h1><blockquote>
+<p>由于一些众所周知的原因，有些学校把考试成绩具体分数隐藏，本文将介绍在智学网中如何通过开发者工具来计算真实分数</p>
+</blockquote>
+<p>查看成绩的方法也是更新过好多次了，从最开始网络请求的GetReportMain（大概是吧）的直接给出每科以及总分数，到从解析中每道题的得分计算分数，再到现在的要通过一个示意图来计算分数，~~我也不知道为啥要整的这么严~~</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>1.打开智学网的网页版并登录，进入“成绩报告”</p>
+<p><img src="https://s2.loli.net/2024/08/29/vGYVTKUWhXyO62z.png" alt="点击成绩报告后的图片"></p>
+<p>注意到那个小旗子了吗。它就是本文的主角!
+<img src="https://s2.loli.net/2024/08/29/9du2fDsUBEokZyJ.png" alt="小旗子前进特写">
+原理就是通过小旗子前进的 百分比x满分 计算得分
+（我一开始还以为就是个图片，后来才知道是由css控制的）</p>
+<p>2.右键小旗子，点击检查，找到 class&#x3D;”class-running” 的区块中的 style ，left的百分比就是得分占总分的百分比
+<img src="https://s2.loli.net/2024/08/29/DF2mEsKSj4RnBbM.png" alt="点击检查后">
+<img src="https://s2.loli.net/2024/08/29/pSyG3au4PIgl6FY.png" alt="放大后"></p>
+<p>3.计算分数</p>
+<p>得分&#x3D;总分x百分比</p>
+<p>每一科以及总分都如此计算即可</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
     
-    <a style="--stagger:0" href="/uncategorized/pgzero%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/%E6%99%BA%E5%AD%A6%E7%BD%91/">智学网</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/uncategorized/pgzero%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
           pgzero新手教程
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          Sep 07
-          ·
-          5 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:1" href="/uncategorized/%E6%9F%A5%E7%9C%8B%E6%99%BA%E5%AD%A6%E7%BD%91%E8%A2%AB%E9%9A%90%E8%97%8F%E7%9A%84%E6%88%90%E7%BB%A9/" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          查看智学网被隐藏的成绩
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          Aug 30
-          ·
-          1 min
-        </p>
-      </section>
-    </a>
-  
-    
-    
-    <a style="--stagger:2" href="/uncategorized/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/uncategorized/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
           markdown学习记录
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          Aug 29
-          ·
-          2 min
-        </p>
-      </section>
-    </a>
-  
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
     
-    
-    <a style="--stagger:3" href="/uncategorized/%E8%8C%B6%E5%8F%B6%E6%8F%90%E5%8F%96%E5%92%96%E5%95%A1%E5%9B%A0%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/" data-animate>
-      <header>
-        <h2 class="font-bold text-xl">
-          茶叶提取咖啡因实验记录
-        </h2>
-      </header>
-      <section class="text-gray-400 my-2 text-sm time">
-        <p class="line-clamp-4">
-          
-        </p>
-        <p class="line-clamp-4">
-          Aug 29
-          ·
-          1 min
-        </p>
-      </section>
-    </a>
-  
+
+  </div>
 </section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
 
   </main>
   <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
